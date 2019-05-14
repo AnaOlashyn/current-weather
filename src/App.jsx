@@ -47,7 +47,7 @@ export class App extends React.Component {
 
   getWeather() {
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", `http://api.openweathermap.org/data/2.5/weather?lat=${this.state.latitude}&lon=${this.state.longitude}&APPID=1120d9e68a9842cedcdeecdf460ff13b`);
+    xhr.open("GET", `https://api.openweathermap.org/data/2.5/weather?lat=${this.state.latitude}&lon=${this.state.longitude}&APPID=1120d9e68a9842cedcdeecdf460ff13b`);
     xhr.onreadystatechange = () => {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
